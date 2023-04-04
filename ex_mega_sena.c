@@ -29,7 +29,7 @@ int main()
         E preciso guardar todos eles conforme surgem e os imprimir.
     */
 
-    for (int i=2;i<=20;i+=2){
+    for (int i=2;i<=60;i+=2){
         for (int j=1;j<=59;j+=2){
             for (int k=2;k<=60;k+=2){
                 for (int l=1;l<=59;l+=2){
@@ -45,13 +45,13 @@ int main()
                                 valor_sexto     =p;
 
                                 contador_possibilidades++;
-
+/*
                                 printf("\n%d\t%d\t%d\t%d\t%d\t%d\tcontador ate agora: %d\n",
                                        valor_primeiro,valor_segundo,valor_terceiro,
                                        valor_quarto,valor_quinto,valor_sexto,
                                        contador_possibilidades);
 
-
+*/
 
                                 }
 
@@ -70,3 +70,5 @@ int main()
     return 0;
 
 }
+
+
