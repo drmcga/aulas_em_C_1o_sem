@@ -44,7 +44,6 @@ int main(){
     printf("%3.2f %3.2f\n", valor_trienio, valor_maior);
     */
 
-
     //bloco do loop. E um loop simples, dividido em 4 partes:
     for (int i = 2; i< num_valores; i++){
 
