@@ -26,7 +26,7 @@ int main()
     //escolha para pular a prova-real
     scanf("%c",&escolha);
 
-    
+
     /*
         e um exercicio de analise combinatoria simples.
         Anota-se os valores possiveis de cada casa, e os multiplica individualmente, criando lacos..
@@ -44,24 +44,23 @@ int main()
 
 
 
-    for (int i=2;i<=60;i+=6){
-        for (int j=1;j<=59;j+=6){
-            for (int k=2;k<=60;k+=4){
-                for (int l=1;l<=59;l+=4){
-                    for (int o=2;o<=60;o+=2){
-                        for (int p=1;p<=59;p+=2){
-                            if(i!=k && i!=o && k!=o &&
-                            j!=l && j!=p && l!=p){
-                                
+    for (int i=2;i<=60;i+=2){
+        for (int j=1;j<=55;j+=2){
+            for (int k=i+2;k<=60;k+=2){
+                for (int l=j+2;l<=57;l+=2){
+                    for (int o=k+2;o<=60;o+=2){
+                        for (int p=l+2;p<=59;p+=2){
+
+
                                 //soma-se ao total de possibilidades
                                 contador_possibilidades++;
-                                
+
                                 //print opcional para visualizacao
                                 if (escolha=='S'){
                                     printf("\n%d\t%d\t%d\t%d\t%d\t%d\tcontador ate agora: %d\n",
                                            i, j, k, l, o, p,
                                            contador_possibilidades);
-                                }
+
 
 
                             }
