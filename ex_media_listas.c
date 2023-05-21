@@ -12,7 +12,7 @@
 int main(){
 
     int quantidade;
-    float vetor_a[5], somatoria=0;
+    float vetor_a[50], somatoria=0;
 
     printf("\n\tDigite quantos valores, de 1 a 50,\n\tgostaria de analisar para obter\n\tum media aritimetica.\n\t\t");
     scanf("%d", &quantidade);
