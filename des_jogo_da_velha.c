@@ -1,7 +1,7 @@
 /*
  *       ENUNCIADO
  *
- *      Monte um modelo de jogo da velha com interface em cmd line.
+ *      Monte um modelo de jogo da velha com interface de texto.
  *      Use representacao grafica com caracteres que achar melhor.
  *      Permita ao usuario escolher entre um adversario humano ou IA
  *
