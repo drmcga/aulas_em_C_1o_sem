@@ -7,7 +7,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <math.h>
 
 int main(){
 
@@ -37,7 +37,7 @@ int main(){
         somatoria+=quadrados[i];
     }
 
-    des_pd=somatoria/quantidade;
+    des_pd=sqrt(somatoria/quantidade);
 
     printf("\n\n O desvio padrao portanto e:\n\n\t\t[ %3.2f ]\n",des_pd);
 
