@@ -5,3 +5,9 @@ na Fatec Campinas, no curso de Análise e Desenvolvimento de Sistemas(ADS).
 
 Com acesso a bibliografia base da disciplina: 
 Linguagem C (2007) 10a Edição, do professor Luis Damas.
+
+
+codigos de nomenclatura:
+ex_ refere-se a exercicios explicitamente propostos
+des_ refere-se a desafios propostos ou que eu mesmo me propus
+imp_ refere-se a implementacao de alguma funcao, manualmente
