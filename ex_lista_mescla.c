@@ -31,7 +31,6 @@ int main(){
     scanf("%d %d",&qnt_a,&qnt_b);
 
 
-
     //bloco de montagem da primeira matriz
     printf("\n Perfeito, vamos entao comecar com a primeira lista,\n");
     for (int i=0;i<qnt_a;i++){
@@ -49,20 +48,40 @@ int main(){
 
     }
 
-    //variaveis auxiliares
-    int m=0, n=0;
+    //declaracao de variaveis auxiliares
+    //o temp e pra realizar troca entre fatores fora de ordem
+    //o cont e para verificar se esta havendo uma troca entre os fatores
+    int temp, cont=0;
 
-    //bloco da lista de mesclagem:
+    //esse for e para enunciar o vetor c, clonando o vetor a, em seguida o vetor b.
     for (int i=0;i<qnt_a+qnt_b;i++){
-        if (i%2==0){
-            sqcia_c[i]=sqcia_a[m];
-            m++;
-        }else {
-            sqcia_c[i]=sqcia_b[n];
-            n++;
-        }
-
+        if (i<qnt_a) sqcia_c[i]=sqcia_a[i];
+        else sqcia_c[i]=sqcia_b[i-qnt_a];
     }
+
+    //o while e para ser eterno, salvo por um unico if
+    //ele rege as trocas, portanto nao tem como saber quantas vezes devemos rodar as trocas
+    //dentro dele vem o loop que percorre o vetor c, fazendo basicamente 1 troca por vez.
+    //por exemplo, se encontra 9 1 2 3, ele vai entregar em 1 loop: 1 2 3 9.
+    //porem se encontrar 9 8 1 2, ele vai entregar 8 1 2 9
+    //isso ocorre porque o 9 vai avancando junto com o i, e sendo jogado para frente ate encontrar um numero maior, ou encerrar
+    while(cont!=-1){
+        cont=0;                                 //condicao para recomecar o loop, se ela se manter, encerramos o loop
+        for (int i=1;i<qnt_a+qnt_b;i++){        //percorrer o vetor
+            if (sqcia_c[i]<sqcia_c[i-1]) {      //se um numero for menor que seu antecessor >> nao ordenado, precisa mudar
+                temp=sqcia_c[i];
+                sqcia_c[i]=sqcia_c[i-1];
+                sqcia_c[i-1]=temp;
+                cont++;                         //se houve mudanca precisa registrar nessa variavel
+            }
+        }
+        
+        if (cont==0) cont=-1;                   //se nao houve mudanca, a variavel nao sera alterada, e vai satisfazer essa condicao.
+    }
+
+
+
+
 
     //prints finais
     printf("\nA lista a:\n [");
@@ -77,7 +96,7 @@ int main(){
     }
     printf("\b\b ]");
 
-    printf("\nA mesclagem entre as duas:\n [");
+    printf("\nA mesclagem ordenada entre as duas:\n [");
     for (int i=0;i<qnt_a+qnt_b;i++){
         printf("%3d, ",sqcia_c[i]);
     }
