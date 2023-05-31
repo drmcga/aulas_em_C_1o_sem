@@ -1,7 +1,7 @@
 /*
  *       ENUNCIADO
  *
- *      Crie um verificador de anagramas.
+ *      Crie um verificador de palindromos para palavras.
  *
 */
 #include <stdio.h>
@@ -16,7 +16,7 @@ int main(){
     int cont=0, verify=1;
 
     //anuncio da funcao do codigo
-    printf("\n  Insira aqui uma palavra para verificar se e um palindormo:\n\n\t\t---->>> ");
+    printf("\n  Insira aqui uma palavra para verificar se e um palindromo:\n\n\t\t---->>> ");
 
     //coleta o input
     gets(palavra);
