@@ -10,7 +10,7 @@
  *
 */
 #include <stdio.h>
-#include <stdlib.h>Ama! e ae!? Se a ea ma!
+#include <stdlib.h>
 
 
 int main(){
