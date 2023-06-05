@@ -5,6 +5,7 @@ na Fatec Campinas, no curso de Análise e Desenvolvimento de Sistemas(ADS).
 
 O conteudo dos exercicios propostos nao se limita a ementa da disciplina formal,
 e sim sobre o que eu desenvolvi ao longo do semestre.
+Cada codigo e unico e contido em si mesmo, com comeco meio e fim independentes.
 
 Com acesso a bibliografia base da disciplina: 
 Linguagem C (2007) 10a Edição, do professor Luis Damas.
