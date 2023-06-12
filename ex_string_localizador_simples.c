@@ -55,7 +55,7 @@ int main(){
         //e cada segmento que quebra vem acompanhado de uma arte em ascii so pra ilustrar a continuidade
         //me orgulho desse formato e da simplicidade do codigo.
     if (k){
-    printf("\n--Sao %2d ocorrencias!\n As posicoes da primeira string quem contem sua segunda string sao:\n\t<[ ",k);
+    printf("\n--Sao %2d ocorrencias!\n As posicoes da primeira string que contem sua segunda string sao:\n\t<[ ",k);
     for (int i=0;i<k;i++){
         printf("%4d, ",lista_pos[i]);
         if(i%13==12) printf("\n\t.  ");
