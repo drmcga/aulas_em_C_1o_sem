@@ -1,15 +1,3 @@
-/*****************************************
- * DESAFIO 3                             *
- *                                       *
- * GABRIEL BIANCHIN DA SILVA             *
- *                                       *
- * RIOS                                  *
- *                                       *
- *                                       *
- *****************************************
-*/
-
-
 
 #include <stdio.h>
 #include <stdlib.h>
